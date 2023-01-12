@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Student</title>
+    </head>
+    <body>
+        <form action="/students" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"><br>
+
+            <label for="class">Class</label>
+            <input type="number" name="class" id="class"><br>
+
+            <label for="rollNum">Roll Number</label>
+            <input type="number" name="rollNum" id="rollNum"><br>
+            
+            <label for="subjects">Subjects</label>
+            <select name="subjects" id="subjects" multiple>
+                <option value="Hindi">Hindi</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+            </select><br>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </body>
+</html>
