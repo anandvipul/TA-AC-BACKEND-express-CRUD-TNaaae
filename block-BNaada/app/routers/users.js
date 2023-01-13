@@ -24,4 +24,12 @@ router.get("/", (req, res, next) => {
         });
 });
 
+router.get("/:id", (req, res, next) => {
+    let id = req.params.id;
+    user.find({_id: id}, (err, doc) => {
+        res.render("singleUser", {user: doc[0]});
+        console.log(doc);
+    });
+});
+
 module.exports = router;
